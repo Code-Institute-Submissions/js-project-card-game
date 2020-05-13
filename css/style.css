@@ -1,0 +1,29 @@
+.grid {
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#g-container {
+margin: 0;
+background: linear-gradient(to bottom right, #06a5e5, #fa3e21);
+}
+
+
+.g-tit{
+    font-size: 6em;
+    color: ;
+    text-align: center;
+    font-weight: ;
+    font-family: ;
+}
+
+
+#g-info{
+    font-size: 3.6em;
+    font-family: ;
+    
+}
