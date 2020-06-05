@@ -1,5 +1,7 @@
 const cards = document.querySelectorAll('.m-card');
 
+
+// init-1/ define var's
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -7,47 +9,16 @@ let firstCard, secondCard;
 matchedCards = [];
 
 
-
-class AudioController {
-  constructor() {
-    this.bMusic = new Audio('assets/sounds/oof.wav');
-    this.flipSound = new Audio('assets/sounds/oof.wav');
-    this.matchSound = new Audio('assets/sounds/oof.wav');
-    this.Successs = new Audio('assets/sounds/oof.wav');
-    this.gameOverClip = new Audio('assets/sounds/oof.wav');
-    this.o0f = new Audio('assets/sounds/oof.wav');
-    this.bMusic.volume = 0.6;
-    this.bMusic.loop = true;
-  }
-  startMusic() {
-    this.bMusic.play();
-  }
-  stopMusic() {
-    this.bMusic.pause();
-  }
-  oof() {
-    this.bMusic.volume = 0.2;
-    this.o0f.play();
-    setTimeout(function() {
-      this.bMusic.volume = 0.6;
-    }, 1600);
-    // + cursor
-  }
-  flip() {
-    this.flipSound.play();
-  }
-  match() {
-    this.matchSound.play();
-  }
-  success() {
-    this.successSound.play();
-    this.stopMusic();
-  }
-  gameOver() {
-    this.gameOverClip.play();
-    //this.startMusic();
-  }
-}
+// preload the audio
+(function preload() {
+  "use strict"; bMusic = new Audio('assets/sounds/Kiss-of-death.mp3');
+  flipSound = new Audio('assets/sounds/flip.wav');
+  Successs = new Audio('assets/sounds/well-done.wav');
+  gameOverClip = new Audio('assets/sounds/game-over.wav');
+  o0f = new Audio('assets/sounds/oof.wav');
+  bMusic.volume = 0.21;
+  bMusic.loop = true;
+})();
 
 
 
@@ -104,6 +75,8 @@ function resetBoard() {
 //   });
 // })();
 
+
+// main event handler
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 // if (shown.length == 16) {
