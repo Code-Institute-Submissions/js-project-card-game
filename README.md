@@ -5,7 +5,7 @@ where the goal is to match two of the hidden cards together, complete the board 
 Hopefully, too boost one's memory/ get it going.
 
 Hosted on [GitHub Pages](https://ghost01123.github.io/js-project-card-game/index.html)
-Repository on [GitHub](https://github.com/Pattern-Projects/oireachtas-ifd-project)
+Repository on [GitHub](https://github.com/ghost01123/js-project-card-game)
 
 ## UX
 ![Responsive Views of Home Page](docs/Screenshot-responsiveness.png)
