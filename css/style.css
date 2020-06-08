@@ -15,13 +15,10 @@
 }
 
 .grid {
-    /* width: 100vw; */
-    /* height: 100vh; */
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: center;
     gap: 1.6%;
-    /* margin:3% */
     -webkit-perspective: 610px;
     perspective: 610px;
 
@@ -34,16 +31,20 @@
 }
 #g-tit{
     color: #990000;
-    font-family: gofill, serif;
+    font-family: gofill, Georgia, serif;
 }
 
+button{
+    background: linear-gradient(to bottom right, #06a2e0, #e12205);
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #g-container {
 margin: 0;
 background: linear-gradient(to bottom right, #06a2e0, #e12205);
-height: 100vh;
-/* perspective: 610px; */
-/* cursor: url("assets/cur/.cur"), auto; */
+height: calc(100vh *3);
 
 }
 
@@ -52,16 +53,12 @@ height: 100vh;
     font-size: 7em;
     color: black;
     text-align: center;
-    /* font-weight: ; */
-    /* font-family: ; */
 }
 
 #g-info{
     font-size: 6em;
     font-family: schnee;
-    color: whitesmoke;
-    /* display: ; */
-        
+    color: whitesmoke;        
 }
 
 .m-card {
@@ -88,9 +85,7 @@ height: 100vh;
 
 .card-2 {
     position: absolute;
-    /* width: 100%; */
     height: 100%;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
      overflow: hidden;   
@@ -111,10 +106,6 @@ img {
   margin-right: auto;
   }
 
-/* .m-card.show{
-    transform: rotateY(180);
-   
-} */
 
 .front-face {
     transform: rotateY(180deg);
@@ -127,9 +118,7 @@ img {
     
 
 }
-
         /* info and buttons  */
- 
 div#g-info{
     color: black;
     margin-bottom: 21.3px;
@@ -145,10 +134,6 @@ button {
     padding: 8px 13px;
 }
 
-#info-span-2 {
-    
-}
-
 .overlay {
     position: fixed;
     display: none;
@@ -162,29 +147,30 @@ button {
   align-items: center;
   z-index: 69;
   animation: overlay-boom 600ms forwards;
+  
 }
 
 div.overlay.show {
     display: flex;
 }
 
-#game-over{
+#game-over, #victory.show{
     display: none;
     text-align: center;
     padding-top: 20%;
-    font-family: kberry, serif;
-    font-size: 5rem;
+    font-family: kberry, Georgia, serif;
+    font-size: 5em;
+    color: #BEB7A4;
 } 
-#game-over.show{
+#game-over.show, #victory.show{
     display: block;
 
 } 
 
 span.restart-text {
     display: block;
-    /* position: relative; */
     padding-top: 10%;
-    font-family: schnee, serif;
+    font-family: schnee, Georgia, serif;
     font-size: 3em;
 }
 
@@ -197,4 +183,15 @@ span.restart-text {
        font-size: 6em;
        background-color: rgba(0, 0, 0, 0.87);
    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #g-info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
