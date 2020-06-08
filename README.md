@@ -1,39 +1,147 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Ani card game
 
-Welcome ghost01123,
+A fun anime/ gaming related card matching game -
+where the goal is to match two of the hidden cards together, complete the board in the shortest amount of time and with as few flip's as possible.
+Hopefully, too boost one's memory/ get it going.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Hosted on [GitHub Pages](https://ghost01123.github.io/js-project-card-game/index.html)
+Repository on [GitHub](https://github.com/Pattern-Projects/oireachtas-ifd-project)
 
-## Gitpod Reminders
+## UX
+![Responsive Views of Home Page](docs/Screenshot-responsiveness.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+### Users 
+Expected users of the website are gamers/ friends or people just looking for a basic fun memory game .
 
-A blue button should appear to click: *Make Public*,
+### User Stories
+1. A user wants to engage in a fun basic brain exercise.
+2. Meant for viewing on a descktop/ laptop/ tabalet where there is more screen real estate.
 
-Another blue button should appear to click: *Open Browser*.
+### Design
+- Colour scheme consists:
+    - Tweaked versions of archaic ('assets/images/ditf.jpg') colours using https://www.w3schools.com/colors/colors_picker.asp)
+    - (https://coolors.co/) - to select a lighter color for the overlay text
+    - custom font's used throughout the website - https://www.urbanfonts.com
+    - (backup) font-family: Georgia, serif
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- UX elements
+    - Animations
+    - Transitions
+- Git - Version Control System
+- GitHub - Remote Repository
+- Deployed - Hosted on Github Pages
 
-A blue button should appear to click: *Make Public*,
+### Existing Features
+- Documentation - ReadMe File, Licence & Mockups
+- JavaScript focused development
+- overlays
+- grids
+- Colour Scheme
+- Responsive view
+- UX elements
+    - Animations
+    - Transitions
+- Git - Version Control System
+- GitHub - Remote Repository
+- Deployed - Hosted on Github Pages
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+### Features Left to Implement
+- Background music selector
+- Added cards/ rows for harder difficulty/ larger screens 
+- fewer, smaller cards for smaller screen sizes.
 
-## Updates Since The Instructional Video
+## Technologies Used
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+This project makes use of:
+- HTML
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - CSS for Styling
+- [CSS + JavaScript](https://www.w3schools.com/jsref/)
+- [JavaScript research](https://stackoverflow.com/)
+- Chrome - Used for browser and dev tools
+- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new)
+    - Used for browser and dev tools
+- [duckduckgo](https://duckduckgo.com/)
+    - **duckduckgo** was used for research.
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - This project was built using the **VS Code** IDE
+- [GitHub](https://github.com/)
+    - Repository hosted on **GitHub**
+- [Github Pages](https://pattern-projects.github.io/oireachtas-ifd-project/)
+    - Website hosted on **Github Pages**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- [Am I Responsive](http://ami.responsivedesign.is)
+    - Testing responsiveness of the website
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The site was tested through a number of means.
+ 
+1. Open testing.html in the root directory
+2. Run using a live server process
+3. Also on a tablet 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Alternatively:
 
---------
+1. Visit the hosted version of the [website](https://ghost01123.github.io/js-project-card-game/index.html)
 
-Happy coding!
+
+## Deployment
+
+The project is hosted on [GitHub Pages](https://ghost01123.github.io/js-project-card-game/index.html)
+
+The process involved:
+- Host a git repository on GitHub. Explained [here](https://help.github.com/en/articles/create-a-repo).
+- The root folder contains README.md and index.html files
+- On GitHub repository settings page move to GitHub Pages section
+- Change source to master branch. (Or any desired branch)
+- Provided link will be your projects home (index) page.
+ 
+To deploy your own version of the website:
+- Have git installed
+- Visit the [repository]([GitHub](https://github.com/ghost01123/js-project-card-game))
+- Click 'Clone or download' and copy the code for http
+- Open your chosen IDE (sublime text, VS Code, etc.)
+- Open a terminal in your root directory
+- Type 'git clone ' followed by the code taken from github repository
+    - ```git clone https://github.com/ghost01123/js-project-card-game.git```
+- When this completes you have your own version of the website
+    - Feel free to make any changes to it
+- The website can be run by opening one of the HTML files in your browser
+- Visit the link provided
+- Saved changes to the website will appear here after refreshing the page
+
+The benefits of hosting your website on GitHub pages is that any pushed changes to your project will automatically update the website. Development branches can be created and merged to the master when complete.
+
+During development the site was written using VS Code +Live Server plugin for VS Code.
+
+
+## Credits
+
+### Media
+https://www.freepngs.com/search-pngs
+https://pngtree.com/
+// flip sound
+// https://freesound.org/s/240776/
+
+// background music:
+//   performed by Mika Nakashima, written by: HYDE, source: Sony Music Labels Inc.
+
+// game over
+// https://freesound.org/s/277403/
+
+// well done
+// https://freesound.org/s/436164/
+
+// www.rw-designer.com/
+
+// https://www.urbanfonts.com
+
+### Acknowledgements
+tutorial - 
+https://www.youtube.com/watch?v=ZniVgo8U7ek
+
+read me - 
+https://github.com/Pattern-Projects
