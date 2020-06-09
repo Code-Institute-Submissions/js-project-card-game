@@ -71,7 +71,6 @@ This project makes use of:
     - Repository hosted on **GitHub**
 - [Github Pages](https://pattern-projects.github.io/oireachtas-ifd-project/)
     - Website hosted on **Github Pages**
-
 - [Am I Responsive](http://ami.responsivedesign.is)
     - Testing responsiveness of the website
 
@@ -81,7 +80,9 @@ The site was tested through a number of means.
  
 1. Open testing.html in the root directory
 2. Run using a live server process
-3. Also on a tablet 
+3. Also on a tablet too see how it would look and work
+4. non automated testing by playing the game and getting other too do so also.
+5. also... https://codebeautify.org/jsvalidate and the oficial html/ css validator.
 
 Alternatively:
 
