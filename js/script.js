@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+// jslint esversion: 6
 // init-1/ define var's
 const cards = Array.from(document.querySelectorAll('.m-card'));
 cardsArray = cards;
@@ -22,6 +24,7 @@ victoryOverlay = document.getElementById('victory');
 //cursor
 let elementForCur = document.getElementsByTagName("body")[0];
 elementForCur.style.cursor = "url('assets/cur/ani547.cur'), url('nezuko-kamado.cur'), auto";
+let countDown;
 
 // preload the audio
 (function preload() {
@@ -54,6 +57,10 @@ function init() {
       clearInterval(CDInterval);
           gameOver();
       }
+      //if win
+      else if (matchedCards === N /2) {
+        clearInterval(CDInterval);
+      };
   }
 }
 
@@ -127,7 +134,7 @@ function restart() {
   matchedCards = [];
   resetBoard();
   hideCards();
-};
+}
 
 function hideCards() {
   cardsArray.forEach(card => {
@@ -148,17 +155,3 @@ function succsessScreen() {
     card.style.order = randomPos;
   });
 })();
-
-// flip sound
-// https://freesound.org/s/240776/
-
-// game over
-// https://freesound.org/s/277403/
-
-// well done
-// https://freesound.org/s/436164/
-
-// www.rw-designer.com/
-
-// http://www.foopy.com/ 
-// https://www.urbanfonts.com
