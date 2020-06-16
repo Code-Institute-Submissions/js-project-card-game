@@ -1,4 +1,4 @@
-
+/* fonts */
 @font-face {
     font-family: 'gofill';
     src: url('txt/ghoul/ghoulofill.woff') format('woff'), url('..assets/txt/ghoul/ghoulofill.woff2') format('woff2');
@@ -14,14 +14,15 @@
     src: url('txt/ghoul/schnee.woff') format('woff'), url('..assets/txt/ghoul/schnee.woff2') format('woff2');
 }
 
+    /* where the cards are */
 .grid {
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: center;
     gap: 1.6%;
+    /* 3d */
     -webkit-perspective: 610px;
     perspective: 610px;
-
 }
 
 *{
@@ -29,6 +30,7 @@
     margin: 0;
     padding: 0;
 }
+    /* title */
 #g-tit{
     color: #990000;
     font-family: gofill, Georgia, serif;
@@ -36,18 +38,28 @@
 
 button{
     background: linear-gradient(to bottom right, #06a2e0, #e12205);
-    border: 2px solid black;
+    border: 3px solid black;
     margin-left: auto;
     margin-right: auto;
+    height: 45px;
+    font-size:0.21em;
+}
+button.show{
+    border: 3px solid #BEB7A4;;
 }
 
 #g-container {
-margin: 0;
-background: linear-gradient(to bottom right, #06a2e0, #e12205);
-height: calc(100vh *3);
-
+    margin: 0;
+    background: linear-gradient(to bottom right, #06a2e0, #e12205);
+    height: calc(100vh *1.09);
 }
 
+/* for small screens */
+@media screen and (max-width: 600px), (max-height:900px) {
+    div#g-container {
+        height: 300vh;
+    }
+}
 
 .g-tit, h1{
     font-size: 7em;
@@ -94,30 +106,25 @@ height: calc(100vh *3);
      border: 3px solid black;
      border-radius: 15px;
      transition: transform 369ms ease-in-out;
-
-
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-
 
 .front-face {
     transform: rotateY(180deg);
     background-color: whitesmoke;
-
 }
 
 .back-face {
     background-color: black; 
-    
-
 }
+
         /* info and buttons  */
 div#g-info{
     color: black;
@@ -126,7 +133,6 @@ div#g-info{
     display: flex;
     justify-content: space-between;
 }
-
 
 button {
     color:black;
@@ -141,13 +147,12 @@ button {
     right: 0;
     top: 0;
     bottom: 0;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  z-index: 69;
-  animation: overlay-boom 600ms forwards;
-  
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 69;
+    animation: overlay-boom 600ms forwards;
 }
 
 div.overlay.show {
@@ -162,18 +167,19 @@ div.overlay.show {
     font-size: 5em;
     color: #BEB7A4;
 } 
+
 #game-over.show, #victory.show{
     display: block;
-
 } 
 
+/* overlay text */
 span.restart-text {
     display: block;
     padding-top: 10%;
     font-family: schnee, Georgia, serif;
     font-size: 3em;
 }
-
+/* animation */
 @keyframes overlay-boom {
    from {
        background-color: rgba(0, 0, 0, 0.1);
@@ -184,12 +190,11 @@ span.restart-text {
        background-color: rgba(0, 0, 0, 0.87);
    }
 }
-
+/* for small screens */
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(2, auto);
     }
-
     #g-info {
         flex-direction: column;
         align-items: center;
