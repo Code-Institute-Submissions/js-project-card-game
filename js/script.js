@@ -50,6 +50,7 @@ function init() {
   ticker.innerText = totalClicks;
   lockBoard = false;
   bMusic.play();
+  shuffle ();
   let CDInterval = setInterval(countDown, 1000);
   //start the count down timer
   function countDown() {
@@ -150,9 +151,9 @@ function succsessScreen() {
 }
 
 // card randomizer
-(function shuffle() {
+function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * N);
     card.style.order = randomPos;
   });
-})();
+};
