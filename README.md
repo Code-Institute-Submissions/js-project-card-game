@@ -1,26 +1,25 @@
 # Ani card game
 
 A fun anime/ gaming related card matching game -
-where the goal is to match two of the hidden cards together, complete the board in the shortest amount of time and with as few flips as possible.
-Hopefully, too boost one's memory/ get it going.
+where the goal is to match two of the hidden cards together, complete the board in the shortest amount of time and with as few flips as possible and hopefully boosting one's memory in the meantime.
 
 Meant for viewing on a desktop/ laptop/ tablet where there is more screen real estate.
 Hosted on [GitHub Pages](https://ghost01123.github.io/js-project-card-game/index.html)
 Repository on [GitHub](https://github.com/ghost01123/js-project-card-game)
 
+
 ## UX
 ![Responsive Views of Home Page](docs/Screenshot-responsiveness.png)
-
 
 ### Users 
 Expected users of the website are gamers/ friends or people just looking for a basic fun memory game.
 
 ### User Stories
-- A gamer on the website I want to have fun, playing a simple game that works with interesting/ engaging features.
+- As gamer on the website I want to have fun, playing a simple game that works, with interesting/ engaging features.
 
 - As someone who won't's to play a memory game, a functional game which exercises one's memory is a requirement 
 
-- my goal is to adapt/ make an enjoyable game that plays well, is easy to understand plus looks good so interested parties would wont to play it and also learn while doing creating it. 
+- my goal is to adapt/ make an enjoyable game that plays well, is easy to understand plus looks good so interested parties would wont to play it and also learn JS while creating it. 
 
 ### Design
 - Colour scheme consists:
@@ -29,23 +28,17 @@ Expected users of the website are gamers/ friends or people just looking for a b
     - custom font's used throughout the website - https://www.urbanfonts.com
     - (backup) font-family: Georgia, serif
 
-- UX elements
-    - Animations
-    - Transitions
-- Git - Version Control System
-- GitHub - Remote Repository
-- Deployed - Hosted on Github Pages
-
 ### Existing Features
 - Documentation 
 - JavaScript focused development
 - overlays
-- grids
+- grids with random positioning 
 - Colour Scheme
 - Responsive view
 - UX elements
     - Animations
     - Transitions
+    - 3d perspective
 - Git - Version Control System
 - GitHub - Remote Repository
 - Deployed - Hosted on Github Pages
@@ -78,6 +71,7 @@ This project makes use of:
 - [Am I Responsive](http://ami.responsivedesign.is)
     - Testing responsiveness of the website
 
+
 ## Testing
 
 The site was tested through several means:
@@ -85,8 +79,8 @@ The site was tested through several means:
 1. Testing - Open .html in the root directory
 2. Run using a live server process
 3. Testing on a tablet too see how it would look and work on a smaller screen
-4. non-automated testing by playing the game and seeing what bugs come up
-5. Getting other people too test out the game and report back to me what they find. 
+4. Non-automated testing by playing the game and seeing what bugs come up
+5. Getting other people too test out the game and report back to me what bugs they find. 
 6. Also, javascript validating via ... https://codebeautify.org/jsvalidate 
 7. HTML and CSS validating via... https://validator.w3.org/
 
